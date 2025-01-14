@@ -195,81 +195,94 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Projects</h2>
+          <h2>Projects and Publications</h2>
         </div>
 
-        <div class="row">
-          <!-- Autism Detection Using Deep Learning Techniques -->
-          <div class="col-lg-4 col-md-6 project-item">
-            <div class="project-wrap">
+        <!-- Filter Tabs -->
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-ds">Data Science</li>
+              <li data-filter=".filter-mle">Machine Learning</li>
+              <li data-filter=".filter-publications">Publications</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Projects Display -->
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          <!-- Data Science Projects -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ds">
+            <div class="portfolio-wrap">
               <img src="assets/img/project-1.jpg" class="img-fluid" alt="Autism Detection">
-              <div class="project-links">
+              <div class="portfolio-links">
                 <a href="https://github.com/DHYEY166/AUTISM-DETECTION" title="More Details"><i class="bx bx-link"></i></a>
               </div>
               <div class="project-text">
                 <h4>Autism Detection Using Deep Learning Techniques</h4>
-                <p>Developed an application to detect autism using facial images and deep learning models such as VGG16, VGG19, and EfficientNet. Achieved accurate predictions with a user-friendly interface for saving predictions.</p>
-                <p><strong>Skills:</strong> Computer Vision, Deep Learning, TensorFlow, OpenCV, Python, Machine Learning</p>
+                <p>Developed an application to detect autism using facial images and deep learning models such as VGG16, VGG19, and EfficientNet.</p>
+                <p><strong>Skills:</strong> Computer Vision, Deep Learning, TensorFlow, OpenCV</p>
               </div>
             </div>
           </div>
 
-          <!-- Brain Stroke Detection using M.L. Models -->
-          <div class="col-lg-4 col-md-6 project-item">
-            <div class="project-wrap">
+          <!-- Machine Learning Projects -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mle">
+            <div class="portfolio-wrap">
               <img src="assets/img/project-2.jpg" class="img-fluid" alt="Brain Stroke Detection">
-              <div class="project-links">
+              <div class="portfolio-links">
                 <a href="https://github.com/DHYEY166/brainstroke_detection" title="More Details"><i class="bx bx-link"></i></a>
               </div>
               <div class="project-text">
                 <h4>Brain Stroke Detection using M.L. Models</h4>
                 <p>Authored and published a paper on brain stroke detection using various machine learning classifiers, achieving high accuracy. Published in IEEE Xplore in IEMECON'2023.</p>
-                <p><strong>Skills:</strong> Python, Machine Learning, Data Analysis, Logistic Regression, SVM, Random Forest</p>
+                <p><strong>Skills:</strong> Python, SVM, Random Forest, Logistic Regression</p>
               </div>
             </div>
           </div>
 
-          <!-- Breast Cancer Semantic Segmentation (BCSS) -->
-          <div class="col-lg-4 col-md-6 project-item">
-            <div class="project-wrap">
+          <!-- Data Science Projects -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ds">
+            <div class="portfolio-wrap">
               <img src="assets/img/project-3.jpg" class="img-fluid" alt="Breast Cancer Segmentation">
-              <div class="project-links">
+              <div class="portfolio-links">
                 <a href="https://github.com/DHYEY166/BREAST_CANCER_SEMANTIC_SEGMENTATION" title="More Details"><i class="bx bx-link"></i></a>
               </div>
               <div class="project-text">
                 <h4>Breast Cancer Semantic Segmentation (BCSS)</h4>
-                <p>Developed a deep learning-based system for breast cancer segmentation using U-Net and ResNet34. Achieved 97.53% accuracy in segmenting cancerous regions in histopathological images.</p>
-                <p><strong>Skills:</strong> Python, Deep Learning, PyTorch, TensorFlow, Keras, Image Segmentation</p>
+                <p>Developed a deep learning-based system for breast cancer segmentation using U-Net and ResNet34 with 97.53% accuracy in histopathological images.</p>
+                <p><strong>Skills:</strong> Deep Learning, PyTorch, TensorFlow, Keras</p>
               </div>
             </div>
           </div>
 
-          <!-- Hate Speech and Offensive Language Detection using NLP -->
-          <div class="col-lg-4 col-md-6 project-item">
-            <div class="project-wrap">
+          <!-- Machine Learning Projects -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mle">
+            <div class="portfolio-wrap">
               <img src="assets/img/project-4.jpg" class="img-fluid" alt="Hate Speech Detection">
-              <div class="project-links">
+              <div class="portfolio-links">
                 <a href="https://github.com/DHYEY166/Hate-Speech-and-Offensive-Language-Detection" title="More Details"><i class="bx bx-link"></i></a>
               </div>
               <div class="project-text">
                 <h4>Hate Speech and Offensive Language Detection using NLP</h4>
-                <p>Created a system to detect hate speech and offensive language using NLP techniques like TF-IDF and CNN, achieving 95% accuracy on a diverse dataset.</p>
-                <p><strong>Skills:</strong> Python, NLP, Deep Learning, CNN, Machine Learning, Data Analysis</p>
+                <p>Created a system to detect hate speech and offensive language using NLP techniques like TF-IDF and CNN, achieving 95% accuracy.</p>
+                <p><strong>Skills:</strong> NLP, CNN, Python, Data Analysis</p>
               </div>
             </div>
           </div>
 
-          <!-- Multiple Sclerosis Detection -->
-          <div class="col-lg-4 col-md-6 project-item">
-            <div class="project-wrap">
+          <!-- Publications Section -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-publications">
+            <div class="portfolio-wrap">
               <img src="assets/img/project-5.jpg" class="img-fluid" alt="Multiple Sclerosis Detection">
-              <div class="project-links">
+              <div class="portfolio-links">
                 <a href="https://github.com/DHYEY166/Multiple_Sclerosis_Detection" title="More Details"><i class="bx bx-link"></i></a>
               </div>
               <div class="project-text">
                 <h4>Multiple Sclerosis Detection</h4>
-                <p>Pioneered a project for early detection of Multiple Sclerosis using state-of-the-art Computer Vision and Deep Learning models, achieving 99% accuracy in classifying Brain MRI scans.</p>
-                <p><strong>Skills:</strong> Python, Computer Vision, Image Processing, Deep Learning, VGG-16</p>
+                <p>Using deep learning models to classify MRI images for detecting Multiple Sclerosis (99% accuracy).</p>
+                <p><strong>Skills:</strong> Image Processing, Deep Learning, VGG-16, Computer Vision</p>
               </div>
             </div>
           </div>
