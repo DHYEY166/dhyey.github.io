@@ -99,97 +99,6 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Last Updated on January 2025</p>
-        </div>
-
-        <div class="row">
-          <!-- Education Section -->
-          <div class="col-lg-12" data-aos="fade-up">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Science in Applied Data Science</h4>
-              <h5>August 2024 - May 2026 (Expected)</h5>
-              <p><em>University of Southern California (USC), Los Angeles, CA</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Technology in Computer Science and Engineering</h4>
-              <h5>2017 - 2021</h5>
-              <p><em>Manipal University Jaipur, Jaipur, Rajasthan</em></p>
-            </div>
-          </div>
-          
-          <!-- Professional Experience Section -->
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Generative AI Intern</h4>
-              <h5>April 2024 - June 2024</h5>
-              <p><em>Genpact, Gurgaon</em></p>
-              <ul>
-                <li>Developed privacy-focused Generative AI solutions for financial data analysis, improving accuracy by 15%.</li>
-                <li>Streamlined machine learning pipelines for production deployment, achieving 20% greater efficiency.</li>
-                <li>Designed systematic evaluation metrics for model performance and fairness across user demographics.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Trainee, Analytics Insight</h4>
-              <h5>March 2023 - July 2023</h5>
-              <p><em>PwC, Bangalore</em></p>
-              <ul>
-                <li>Accelerated data retrieval efficiency by 20% through refined database management.</li>
-                <li>Re-structured machine learning deployment workflows, reducing development time by 20%.</li>
-                <li>Implemented robust monitoring systems for production models using Python.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Academic Intern, Deep Learning</h4>
-              <h5>June 2022 - August 2022</h5>
-              <p><em>National University of Singapore (NUS), Singapore</em></p>
-              <ul>
-                <li>Developed privacy-preserving deep learning systems, improving accuracy by 10% and reducing bias.</li>
-                <li>Architected deep learning models in TensorFlow, reducing inference time by 40%.</li>
-                <li>Collaborated with faculty on innovative CNN architectures for image analysis.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Skills Section -->
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Technical Skills</h3>
-            <ul>
-              <li><strong>Data Science & Machine Learning:</strong> Python, TensorFlow, PyTorch, Feature Engineering, Model Optimization</li>
-              <li><strong>Data Processing:</strong> SQL, Pandas, Hadoop, Spark, MongoDB, ETL Pipelines</li>
-              <li><strong>Visualization:</strong> Tableau, Matplotlib, MATLAB</li>
-              <li><strong>Specializations:</strong> NLP, Computer Vision, Privacy-Preserving ML</li>
-            </ul>
-          </div>
-
-          <!-- Publications Section -->
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-            <h3 class="resume-title">Publications</h3>
-            <div class="resume-item">
-              <h4>Brain Stroke Detection using M.L. Models</h4>
-              <h5>February 2023</h5>
-              <p><em>IEEE Xplore</em></p>
-              <ul>
-                <li>Analyzed 8 ML and DL models for improved feature extraction in brain stroke detection.</li>
-                <li>Used ensemble methods and advanced preprocessing to increase accuracy by 15%.</li>
-                <li>Published in IEEE Xplore, providing a valuable resource for future research in medical ML applications.</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
     <!-- ======= Projects Section ======= -->
     <section id="projects" class="projects section-bg">
       <div class="container">
@@ -201,11 +110,11 @@
         <!-- Filter Tabs -->
         <div class="row justify-content-center">
           <div class="col-lg-12 text-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-ds">Data Science</li>
-              <li data-filter=".filter-mle">Machine Learning</li>
-              <li data-filter=".filter-publications">Publications</li>
+            <ul id="portfolio-flters" class="d-flex justify-content-center">
+              <li data-filter="*" class="filter-active"><span>All</span></li>
+              <li data-filter=".filter-ds"><span>Data Science</span></li>
+              <li data-filter=".filter-mle"><span>Machine Learning</span></li>
+              <li data-filter=".filter-publications"><span>Publications</span></li>
             </ul>
           </div>
         </div>
@@ -216,13 +125,11 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-ds">
             <div class="portfolio-wrap">
               <img src="assets/img/project-1.jpg" class="img-fluid" alt="Autism Detection">
-              <div class="portfolio-links">
-                <a href="https://github.com/DHYEY166/AUTISM-DETECTION" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="project-text">
+              <div class="portfolio-info">
                 <h4>Autism Detection Using Deep Learning Techniques</h4>
-                <p>Developed an application to detect autism using facial images and deep learning models such as VGG16, VGG19, and EfficientNet.</p>
+                <p>Developed an application to detect autism using facial images and deep learning models like VGG16, VGG19, and EfficientNet.</p>
                 <p><strong>Skills:</strong> Computer Vision, Deep Learning, TensorFlow, OpenCV</p>
+                <a href="https://github.com/DHYEY166/AUTISM-DETECTION" class="btn btn-primary" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
@@ -231,13 +138,11 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-mle">
             <div class="portfolio-wrap">
               <img src="assets/img/project-2.jpg" class="img-fluid" alt="Brain Stroke Detection">
-              <div class="portfolio-links">
-                <a href="https://github.com/DHYEY166/brainstroke_detection" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="project-text">
+              <div class="portfolio-info">
                 <h4>Brain Stroke Detection using M.L. Models</h4>
-                <p>Authored and published a paper on brain stroke detection using various machine learning classifiers, achieving high accuracy. Published in IEEE Xplore in IEMECON'2023.</p>
+                <p>Authored and published a paper on brain stroke detection using various machine learning classifiers. Published in IEEE Xplore.</p>
                 <p><strong>Skills:</strong> Python, SVM, Random Forest, Logistic Regression</p>
+                <a href="https://github.com/DHYEY166/brainstroke_detection" class="btn btn-primary" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
@@ -246,13 +151,11 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-ds">
             <div class="portfolio-wrap">
               <img src="assets/img/project-3.jpg" class="img-fluid" alt="Breast Cancer Segmentation">
-              <div class="portfolio-links">
-                <a href="https://github.com/DHYEY166/BREAST_CANCER_SEMANTIC_SEGMENTATION" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="project-text">
+              <div class="portfolio-info">
                 <h4>Breast Cancer Semantic Segmentation (BCSS)</h4>
-                <p>Developed a deep learning-based system for breast cancer segmentation using U-Net and ResNet34 with 97.53% accuracy in histopathological images.</p>
+                <p>Developed a deep learning-based system for breast cancer segmentation using U-Net and ResNet34 with 97.53% accuracy.</p>
                 <p><strong>Skills:</strong> Deep Learning, PyTorch, TensorFlow, Keras</p>
+                <a href="https://github.com/DHYEY166/BREAST_CANCER_SEMANTIC_SEGMENTATION" class="btn btn-primary" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
@@ -261,13 +164,11 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-mle">
             <div class="portfolio-wrap">
               <img src="assets/img/project-4.jpg" class="img-fluid" alt="Hate Speech Detection">
-              <div class="portfolio-links">
-                <a href="https://github.com/DHYEY166/Hate-Speech-and-Offensive-Language-Detection" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="project-text">
+              <div class="portfolio-info">
                 <h4>Hate Speech and Offensive Language Detection using NLP</h4>
                 <p>Created a system to detect hate speech and offensive language using NLP techniques like TF-IDF and CNN, achieving 95% accuracy.</p>
                 <p><strong>Skills:</strong> NLP, CNN, Python, Data Analysis</p>
+                <a href="https://github.com/DHYEY166/Hate-Speech-and-Offensive-Language-Detection" class="btn btn-primary" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
@@ -276,13 +177,11 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-publications">
             <div class="portfolio-wrap">
               <img src="assets/img/project-5.jpg" class="img-fluid" alt="Multiple Sclerosis Detection">
-              <div class="portfolio-links">
-                <a href="https://github.com/DHYEY166/Multiple_Sclerosis_Detection" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-              <div class="project-text">
+              <div class="portfolio-info">
                 <h4>Multiple Sclerosis Detection</h4>
-                <p>Using deep learning models to classify MRI images for detecting Multiple Sclerosis (99% accuracy).</p>
+                <p>Using deep learning models to classify MRI images for detecting Multiple Sclerosis with 99% accuracy.</p>
                 <p><strong>Skills:</strong> Image Processing, Deep Learning, VGG-16, Computer Vision</p>
+                <a href="https://github.com/DHYEY166/Multiple_Sclerosis_Detection" class="btn btn-primary" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
