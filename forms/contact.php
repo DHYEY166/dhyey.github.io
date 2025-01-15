@@ -1,45 +1,36 @@
 <?php
-// Include PHPMailer classes
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-// Load Composer's autoloader
-require 'vendor/autoload.php';
-
-// Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    // Include PHPMailer library
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'vendor/autoload.php'; // Ensure you have PHPMailer installed
 
     // Create a new PHPMailer instance
     $mail = new PHPMailer(true);
 
     try {
-        // Server settings
+        //Server settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com'; // Use your mail server's SMTP host
+        $mail->Host = 'smtp.example.com'; // Use your SMTP server
         $mail->SMTPAuth = true;
-        $mail->Username = 'your-email@gmail.com'; // Your email address
-        $mail->Password = 'your-email-password'; // Your email password
+        $mail->Username = 'your_email@example.com'; // Your email address
+        $mail->Password = 'your_email_password'; // Your email password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        // Recipient's email address
-        $mail->setFrom('your-email@gmail.com', 'Dhyey Desai');
-        $mail->addAddress('recipient-email@example.com'); // Replace with your recipient's email
+        //Recipients
+        $mail->setFrom('your_email@example.com', 'Your Name');
+        $mail->addAddress('recipient@example.com', 'Recipient Name'); // Add a recipient
 
         // Content
         $mail->isHTML(true);
-        $mail->Subject = $subject;
-        $mail->Body = "<p>Name: $name</p><p>Email: $email</p><p>Message: $message</p>";
-        $mail->AltBody = "Name: $name\nEmail: $email\nMessage: $message";
+        $mail->Subject = $_POST['subject'];
+        $mail->Body    = "<p>You have received a new message from " . $_POST['name'] . ".</p><p>Email: " . $_POST['email'] . "</p><p>Message: " . nl2br($_POST['message']) . "</p>";
 
         // Send email
         $mail->send();
-        echo 'Your message has been sent.';
+        echo 'Message has been sent';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
